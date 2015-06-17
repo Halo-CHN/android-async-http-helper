@@ -25,18 +25,18 @@ import com.loopj.android.http.RequestParams;
  * @version 1.0
  *
  */
-public class HttpHelper {
+public class AndroidAsyncHttpHelper {
 
-	private static HttpHelper instance;
+	private static AndroidAsyncHttpHelper instance;
 
-	private HttpHelper() {
+	private AndroidAsyncHttpHelper() {
 	}
 
-	public static HttpHelper getInstance() {
+	public static AndroidAsyncHttpHelper getInstance() {
 		if (null == instance) {
-			synchronized (HttpHelper.class) {
+			synchronized (AndroidAsyncHttpHelper.class) {
 				if (null == instance) {
-					instance = new HttpHelper();
+					instance = new AndroidAsyncHttpHelper();
 				}
 			}
 		}
